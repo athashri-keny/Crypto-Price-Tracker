@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: "Kanit", sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png.jpg);
+    background-position: center;
+    background-size: cover;
+    padding:  0 7%;
+    color: white;
+
+}
+.nav-bar {
+    display: flex;
+    gap: 5rem;
+    padding-top: 1rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+.btn {
+    margin-left: 550px;   
+     font-size: 1rem;
+    padding: 12px 15px;
+    border: none ; 
+    border-radius: 30px; 
+    background-color:#ff960b; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center; 
+    cursor: pointer; 
+
+ 
+}
+.contain {
+    margin-top: 5%;
+}
+.contain h1 {
+    font-size: 50px;
+    margin-bottom: 1px;
+}
+.contain h1 span {
+    color: #ff960b;
+}
+.contain p {
+    line-height: 22px;
+    font-size: 20px;
+    padding-bottom: 15px ;
+}
+.bt {
+    background-color: #ff960b; 
+    font-size: 18px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    padding: 12px 24px; 
+    display: inline-block; 
+    font-weight: bold; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.bt:hover {
+    background-color: #e88905; 
+    transform: translateY(-3px); 
+}
+
+.bt:active {
+    background-color: #d87a03; 
+    transform: translateY(0); 
+}
+.coin-list {
+
+ margin-top: 45px;
+    display: flex;
+    align-items: center;
+}
+.coin {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px;
+    color: var(--secondary-color);
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.coin:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.coin img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.coin h3 {
+    color: var(--font-color);
+    margin-right: 10px;
+}
+
+.coin p {
+    font-size: 1rem;
+    color: var(--font-color);
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contain h1 {
+        font-size: 36px;
+    }
+
+    .contain p {
+        font-size: 18px;
+    }
+
+    .coin-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .coin {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
